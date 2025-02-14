@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white; /* White color for the background */
+    background-size: contain; /* Ensures the image fits within the page without distortion */
+    scroll-snap-align: start;
+}
+
+.brush-script-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.brush-text {
+    font-family: 'Brush Script MT', cursive; /* Brush Script font for the 3rd and 5th pages */
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.youtube-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Black background for the video page */
+}
+
+.video-container {
+    width: 90%;
+    height: 80vh; /* Video takes up 80% of the viewport height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
